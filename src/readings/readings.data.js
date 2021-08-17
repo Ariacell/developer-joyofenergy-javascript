@@ -13,6 +13,8 @@ const generateSingle = () => {
 
 const generateAllMeters = () => {
     const readings = {};
+    console.log("something")
+
 
     for (const key in meters) {
         if (meters.hasOwnProperty(key)) {
