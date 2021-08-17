@@ -1,8 +1,8 @@
-const express = require("express");
-const { readings } = require("./readings/readings");
-const { readingsData } = require("./readings/readings.data");
-const { read, store } = require("./readings/readings-controller");
-const { recommend, compare } = require("./price-plans/price-plans-controller");
+import express = require("express");
+import { readings } from "./readings/readings";
+import { readingsData } from "./readings/readings.data";
+import { read, store } from "./readings/readings-controller";
+import { recommend, compare } from "./price-plans/price-plans-controller";
 
 const app = express();
 app.use(express.json());

@@ -361,3 +361,7 @@ Example output
   }
 ]
 ```
+
+
+### Known bugs/issues roadmap
+- Submitting a new reading appears to break subsequent pricerecommendation calculations.

@@ -1,4 +1,4 @@
-const readings = (data) => ({
+export const readings = (data) => ({
     getReadings: (meterId) => data[meterId] || [],
     setReadings: (meterId, readings) => {
         const currentReadings = data[meterId];
@@ -6,5 +6,3 @@ const readings = (data) => ({
         return data[meterId];
     },
 });
-
-module.exports = { readings };
