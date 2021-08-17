@@ -1,5 +1,5 @@
-const { meters } = require("../meters/meters");
-const { readingsData } = require("./readings.data");
+import { meters } from "../meters/meters";
+import { readingsData } from "./readings.data";
 
 describe("generate data", () => {
     it("should generate readings for one meter", () => {

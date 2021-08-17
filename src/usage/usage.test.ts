@@ -1,13 +1,7 @@
-const { meters, meterPricePlanMap } = require("../meters/meters");
-const { pricePlanNames, pricePlans } = require("../price-plans/price-plans");
-const { readings } = require("../readings/readings");
-const {
-    average,
-    timeElapsedInHours,
-    usage,
-    usageCost,
-    usageForAllPricePlans,
-} = require("./usage");
+import { meters, meterPricePlanMap } from "../meters/meters";
+import { pricePlanNames, pricePlans } from "../price-plans/price-plans";
+import { readings } from "../readings/readings";
+import { average, timeElapsedInHours, usage, usageCost, usageForAllPricePlans } from "./usage";
 
 describe("usage", () => {
     it("should average all readings for a meter", () => {

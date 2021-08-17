@@ -1,6 +1,6 @@
-const { meters } = require("../meters/meters");
-const { readings } = require("./readings");
-const { readingsData } = require("./readings.data");
+import { meters } from "../meters/meters";
+import { readings } from "./readings";
+import { readingsData } from "./readings.data";
 
 describe("readings", () => {
     it("should get readings", () => {

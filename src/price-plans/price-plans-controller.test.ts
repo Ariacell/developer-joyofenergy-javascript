@@ -1,7 +1,7 @@
-const { meters } = require("../meters/meters");
-const { pricePlanNames } = require("./price-plans");
-const { readings } = require("../readings/readings");
-const { compare, recommend } = require("./price-plans-controller");
+import { meters } from "../meters/meters";
+import { pricePlanNames } from "./price-plans";
+import { readings } from '../readings/readings';
+import { compare, recommend } from "./price-plans-controller";
 
 describe("price plans", () => {
     it("should compare usage cost for all price plans", () => {

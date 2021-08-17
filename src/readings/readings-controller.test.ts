@@ -1,7 +1,7 @@
-const { read, store } = require("./readings-controller");
-const { readingsData } = require("./readings.data");
-const { readings } = require("./readings");
-const { meters } = require("../meters/meters");
+import { read, store } from "./readings-controller";
+import { readingsData } from "./readings.data";
+import { readings } from "./readings";
+import { meters } from "../meters/meters";
 
 describe("readings", () => {
     it("should get readings with meter id from params", () => {
