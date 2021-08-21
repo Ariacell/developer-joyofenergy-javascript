@@ -19,6 +19,7 @@ describe("readings", () => {
     it("should get empty array if can't find meter id", () => {
         const { getReadings } = readings(readingsData);
 
+        // @ts-ignore
         expect(getReadings("meter-no")).toHaveLength(0);
     });
 
@@ -37,4 +38,18 @@ describe("readings", () => {
 
         expect(length + 3).toEqual(newLength);
     });
+
+    it('should convert string readings and times to numbers', () => {
+        const { getReadings, setReadings } = readings(readingsData);
+        const length = getReadings(meters.METER0).length;
+
+        setReadings(meters.METER0, [
+            // @ts-ignore
+            {time: '12344546', reading: '0.112485'}
+        ]);
+
+        expect(getReadings(meters.METER0)[length].reading).toEqual(0.112485)
+        expect(getReadings(meters.METER0)[length].time).toEqual(12344546)
+    });
+
 });
