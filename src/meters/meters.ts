@@ -1,6 +1,8 @@
 import { pricePlans, pricePlanNames } from "../price-plans/price-plans";
 
-export const meters = {
+export type MeterName =  "smart-meter-0" | "smart-meter-1" | "smart-meter-2" | "smart-meter-3" | "smart-meter-4"
+
+export const meters: {[key: string]: MeterName} = {
     METER0: "smart-meter-0",
     METER1: "smart-meter-1",
     METER2: "smart-meter-2",

@@ -6,3 +6,8 @@ export const readings = (data) => ({
         return data[meterId];
     },
 });
+
+export interface Reading {
+    time: any;
+    reading: number;
+}
